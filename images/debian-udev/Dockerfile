@@ -1,3 +1,3 @@
 FROM debian
 
-RUN apt install -y udev && rm -rf /var/cache/apt/*
+RUN apt-get update && apt-get install -y udev && rm -rf /var/cache/apt/*
